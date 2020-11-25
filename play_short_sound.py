@@ -3,7 +3,7 @@ import wave
 
 chunk = 1024
 
-path = 'music.wav'
+path = 'short_sound_sample.wav'
 
 def play_music():
     with wave.open(path,'rb') as f:
