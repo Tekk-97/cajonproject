@@ -8,6 +8,7 @@ path = 'short_sound_sample.wav'
 def play_music():
     with wave.open(path,'rb') as f:
         p = pyaudio.PyAudio()
+        print("shortsample 레이트 값 ",f.getframerate())
         stream = p.open(format = p.get_format_from_width(f.getsampwidth()),
                         channels = f.getnchannels(),
                         rate = f.getframerate(),
